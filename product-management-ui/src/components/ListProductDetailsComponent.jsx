@@ -19,7 +19,7 @@ class ListProductDetailsComponent extends Component {
         });
     }
     viewProductDetails(id){
-        this.props.history.push(`/view-products/${id}`);
+        this.props.history.push(`/view-product/${id}`);
     }
     editProductDetails(id){
         this.props.history.push(`/add-product/${id}`);

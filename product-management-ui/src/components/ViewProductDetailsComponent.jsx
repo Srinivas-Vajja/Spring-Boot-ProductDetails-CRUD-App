@@ -17,6 +17,10 @@ class ViewProductDetailsComponent extends Component {
         })
     }
 
+    cancel(){
+        this.props.history.push('/products');
+    }
+
     render() {
         return (
             <div>
@@ -39,6 +43,7 @@ class ViewProductDetailsComponent extends Component {
                     </div>
 
                 </div>
+                <button className="btn btn-success" onClick={this.cancel.bind(this)} style={{marginLeft: "780px"}}>Back</button>
             </div>
         )
     }

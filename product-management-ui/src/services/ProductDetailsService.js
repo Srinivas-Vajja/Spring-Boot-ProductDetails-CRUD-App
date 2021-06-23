@@ -8,20 +8,20 @@ class ProductDetailsService {
         return axios.get(PRODUCT_DETAILS_API_BASE_URL);
     }
 
-    createProductDetails(employee){
-        return axios.post(PRODUCT_DETAILS_API_BASE_URL, employee);
+    createProductDetails(product){
+        return axios.post(PRODUCT_DETAILS_API_BASE_URL, product);
     }
 
-    getProductDetailsById(employeeId){
-        return axios.get(PRODUCT_DETAILS_API_BASE_URL + '/' + employeeId);
+    getProductDetailsById(productId){
+        return axios.get(PRODUCT_DETAILS_API_BASE_URL + '/' + productId);
     }
 
-    updateProductDetails(employee, employeeId){
-        return axios.put(PRODUCT_DETAILS_API_BASE_URL + '/' + employeeId, employee);
+    updateProductDetails(product, productId){
+        return axios.put(PRODUCT_DETAILS_API_BASE_URL + '/' + productId, product);
     }
 
-    deleteProductDetails(employeeId){
-        return axios.delete(PRODUCT_DETAILS_API_BASE_URL + '/' + employeeId);
+    deleteProductDetails(productId){
+        return axios.delete(PRODUCT_DETAILS_API_BASE_URL + '/' + productId);
     }
 }
 
